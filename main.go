@@ -142,7 +142,9 @@ func getZoneID(client *http.Client, cfg Config) string {
 		return ""
 	}
 
-	return result.Result[0].ID
+	zoneID := result.Result[0].ID
+	log.Printf("Found zone ID: %s", zoneID)
+	return zoneID
 }
 
 func getDNSRecord(client *http.Client, zoneID string, cfg Config) (string, string) {
