@@ -10,7 +10,7 @@
 
 ## Установка
 sudo yum install -y golang
-git clone https://github.com/yourusername/cloudflare-ddns
+git clone https://github.com/sx000/cloudflare-ddns
 cd cloudflare-ddns
 
 # Сборка
