@@ -23,6 +23,7 @@ go build -o cloudflare-ddns
 # Установка
 ```bash
 sudo mv cloudflare-ddns /usr/local/bin/
+cp cloudflare-ddns.conf /etc/cloudflare-ddns.conf
 sudo mkdir -p /var/lib/cloudflare-ddns
 sudo systemctl daemon-reload
 sudo systemctl enable --now cloudflare-ddns
@@ -33,3 +34,4 @@ sudo systemctl enable --now cloudflare-ddns
 sudo systemctl status cloudflare-ddns
 journalctl -u cloudflare-ddns -f
 ```
+
